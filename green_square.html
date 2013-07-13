@@ -3,7 +3,7 @@
     <head>
         <title>Hello Canvas</title>
     </head>
-    <meta charset = utf-8>
+    <meta charset='utf-8'>
     <body>
         <canvas height='350' width='350' id='myCanvas'>
             Your browser DNIWE EBANOE!
@@ -13,6 +13,9 @@
             var ctx = canvas.getContext('2d');
             ctx.fillStyle = '#5F5'
             ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.font = '50px serif';
+            ctx.fillStyle = '#000';
+            ctx.fillText ('Hello Canvas!', 30, 90);
         </script>
     </body>
 </html>
