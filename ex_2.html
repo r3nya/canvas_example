@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Canvas</title>
+    </head>
+    <meta charset='utf-8'>
+    <body>
+        <canvas height='350' width='350' id='myCanvas'>
+            Your browser DNIWE EBANOE!
+        </canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'violet';
+            ctx.fillRect(25, 25, 150, 150);
+            ctx.strokeStyle = 'gray';
+            ctx.lineWidth = 10;
+            ctx.strokeRect(150, 150, 150, 150);
+            ctx.clearRect(100, 100, 150, 150);
+        </script>
+    </body>
+</html>

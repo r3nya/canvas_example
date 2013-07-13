@@ -5,16 +5,20 @@
     </head>
     <meta charset='utf-8'>
     <body>
-        <canvas height='350' width='350' id='myCanvas'>
+        <canvas height='400' width='400' id='myCanvas'>
             Your browser DNIWE EBANOE!
         </canvas>
         <script>
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext('2d');
+            ctx.shadowColor = '#000';
+            ctx.shadowBlur = 25;
+            ctx.shadowOffsetX = 20;
+            ctx.shadowOffsetY = 20;
             ctx.fillStyle = '#5F5'
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(0, 0, 350, 350);
             ctx.font = '50px serif';
-            ctx.fillStyle = '#000';
+            ctx.fillStyle = '#FCC';
             ctx.fillText ('Hello Canvas!', 30, 90);
         </script>
     </body>
